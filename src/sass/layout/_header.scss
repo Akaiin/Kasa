@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 45px 0;
+    max-width: 1240px;
+
+    &__nav {
+        display: flex;
+        gap: 57px;
+    }
+
+    &__link {
+        color: $primary-color;
+        font-size: 24px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+}
