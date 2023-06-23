@@ -1,5 +1,5 @@
 import Banner from '../../components/Banner'
-import Card from '../../components/Lodging_Card'
+import Card from '../../components/Card'
 import { useEffect } from 'react'
 import { useState } from 'react'
 
@@ -14,9 +14,9 @@ function Home() {
             })
     }, [])
     return (
-        <div>
+        <main>
             <Banner />
-            <section>
+            <section className="lodging">
                 {lodgingData.map((lodging) => (
                     <Card
                         key={lodging.id}
@@ -26,7 +26,7 @@ function Home() {
                     />
                 ))}
             </section>
-        </div>
+        </main>
     )
 }
 

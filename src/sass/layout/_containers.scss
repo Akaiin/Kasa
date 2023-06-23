@@ -1,0 +1,16 @@
+.lodging {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 5%;
+    gap: 20px;
+
+    @include media-query($desktop-width) {
+        background: #f6f6f6;
+        border-radius: 25px;
+        padding-top: 56px;
+        max-width: 1240px;
+        margin: auto;
+        gap: 60px;
+    }
+}

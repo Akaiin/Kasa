@@ -2,21 +2,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 45px 0;
-    max-width: 1240px;
+    padding: 20px 5% 27px 5%;
+
+    @include media-query($desktop-width) {
+        @include margin-center();
+        padding: 45px 5%;
+        margin: auto;
+        max-width: 1240px;
+    }
+
+    &__logo {
+        width: 145px;
+        height: 47px;
+    }
 
     &__nav {
         display: flex;
-        gap: 57px;
+        gap: 26px;
+
+        @include media-query($tablet-width) {
+            gap: 57px;
+        }
     }
 
     &__link {
         color: $primary-color;
-        font-size: 24px;
+        font-size: 12px;
         &:hover {
             text-decoration: underline;
         }
+
+        @include media-query($tablet-width) {
+            font-size: 24px;
+        }
     }
-    
 }

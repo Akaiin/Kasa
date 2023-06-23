@@ -1,5 +1,10 @@
-@import "./utilities/variable";
-@import "./base/base";
-@import "./base/typography";
-@import "./layout/header";
-@import "./layout/footer";
+@import './utilities/variable';
+@import './utilities/mixins';
+@import './base/base';
+@import './base/typography';
+@import './components/banner';
+@import './components/card';
+@import './layout/header';
+@import './layout/containers';
+@import './layout/footer';
+@import './pages/error';

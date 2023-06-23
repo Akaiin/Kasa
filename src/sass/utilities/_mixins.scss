@@ -1,0 +1,10 @@
+@mixin media-query($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}

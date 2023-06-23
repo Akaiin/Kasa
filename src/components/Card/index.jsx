@@ -5,8 +5,12 @@ function Card({ title, background, id }) {
         <Link
             to={`/lodging/${id}`}
             style={{ backgroundImage: `url(${background})` }}
+            className="lodging__card"
+            alt={`${title}`}
         >
-            {title}
+            {' '}
+            <div className="lodging__card__gradient"></div>
+            <h2 className="lodging__card__title">{title}</h2>
         </Link>
     )
 }

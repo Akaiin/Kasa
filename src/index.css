@@ -17,24 +17,143 @@ body {
   font-weight: 500;
 }
 
+.banner {
+  position: relative;
+  height: 111px;
+  border-radius: 10px;
+  margin: 0 5% 22px 5%;
+  padding: 25px 0 32px 16px;
+  background-size: 155%;
+  background-position-y: center;
+  background-position-x: center;
+}
+@media screen and (min-width: 600px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1240px;
+    margin-bottom: 43px;
+    height: 223px;
+    background-size: cover;
+  }
+}
+.banner__filter {
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.3;
+}
+.banner__title {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 24px;
+  width: 217px;
+  font-weight: 500;
+}
+@media screen and (min-width: 600px) {
+  .banner__title {
+    font-size: 48px;
+    width: auto;
+  }
+}
+
+.lodging__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  width: 100%;
+  height: 255px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 1192px) {
+  .lodging__card {
+    width: 340px;
+    height: 340px;
+  }
+}
+.lodging__card__gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(251, 235, 235, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+.lodging__card__title {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 45px 0;
-  max-width: 1240px;
+  padding: 20px 5% 27px 5%;
+}
+@media screen and (min-width: 1192px) {
+  .header {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 45px 5%;
+    margin: auto;
+    max-width: 1240px;
+  }
+}
+.header__logo {
+  width: 145px;
+  height: 47px;
 }
 .header__nav {
   display: flex;
-  gap: 57px;
+  gap: 26px;
+}
+@media screen and (min-width: 600px) {
+  .header__nav {
+    gap: 57px;
+  }
 }
 .header__link {
-  color: #FF6060;
-  font-size: 24px;
+  color: #ff6060;
+  font-size: 12px;
 }
 .header__link:hover {
   text-decoration: underline;
+}
+@media screen and (min-width: 600px) {
+  .header__link {
+    font-size: 24px;
+  }
+}
+
+.lodging {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 5%;
+  gap: 20px;
+}
+@media screen and (min-width: 1192px) {
+  .lodging {
+    background: #f6f6f6;
+    border-radius: 25px;
+    padding-top: 56px;
+    max-width: 1240px;
+    margin: auto;
+    gap: 60px;
+  }
 }
 
 .footer {
@@ -42,10 +161,16 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #000;
-  gap: 28px;
-  margin-top: 50px;
+  gap: 14px;
+  margin-top: 27px;
   padding-top: 66px;
   padding-bottom: 29px;
+}
+@media screen and (min-width: 600px) {
+  .footer {
+    gap: 28px;
+    margin-top: 50px;
+  }
 }
 .footer__logo-white {
   width: 122px;
@@ -53,6 +178,59 @@ body {
 }
 .footer__copyright {
   color: white;
+  font-size: 12px;
+  width: 133px;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .footer__copyright {
+    font-size: 24px;
+    width: auto;
+  }
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff6060;
+  margin-top: 85px;
+  margin-bottom: 85px;
+  gap: 113px;
+}
+.error__title {
+  font-size: 96px;
+}
+@media screen and (min-width: 600px) {
+  .error__title {
+    font-size: 130px;
+  }
+}
+@media screen and (min-width: 1192px) {
+  .error__title {
+    font-size: 288px;
+  }
+}
+.error__subtitle {
+  text-align: center;
+  font-size: 18px;
+  width: 260px;
+}
+@media screen and (min-width: 1192px) {
+  .error__subtitle {
+    width: auto;
+    font-size: 36px;
+  }
+}
+.error__link {
+  text-decoration: underline;
+  font-size: 14px;
+  color: #ff6060;
+}
+@media screen and (min-width: 1192px) {
+  .error__link {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
