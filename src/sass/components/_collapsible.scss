@@ -1,0 +1,45 @@
+.collapsible {
+    overflow: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    &__title {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        background: $primary-color;
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    &__btn {
+        &--open {
+            transform: rotate(-180deg);
+            transition: all 0.5s ease-in-out;
+        }
+
+        &--closed {
+            transform: rotate(0deg);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &__content {
+        font-size: 13px;
+
+        &--open {
+            height: 100px;
+            transition: all 0.5s ease-in-out;
+            transform: translateY(0px);
+            background: $grey;
+            border-radius: 5px;
+        }
+
+        &--closed {
+            height: 0px;
+            transform: translateY(-120px);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}
