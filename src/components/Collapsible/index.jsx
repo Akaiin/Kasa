@@ -18,13 +18,13 @@ function Collapsible({ title, children }) {
                     w
                 </button>
             </div>
-            <p
+            <div
                 className={`collapsible__content collapsible__content--${
                     isOpen ? 'open' : 'closed'
                 }`}
             >
                 {children}
-            </p>
+            </div>
         </div>
     )
 }

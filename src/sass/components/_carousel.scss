@@ -1,0 +1,37 @@
+.carousel {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    &__img {
+        border-radius: 10px;
+        height: 255px;
+        max-width: 1240px;
+    }
+
+    &__right-btn {
+        position: absolute;
+        top: calc(50% - 12px);
+        right: 0;
+        width: 24px;
+        height: 24px;
+        background: none;
+        border: none;
+    }
+
+    &__left-btn {
+        position: absolute;
+        top: calc(50% - 12px);
+        left: 0;
+        width: 24px;
+        height: 24px;
+        background: none;
+        border: none;
+    }
+
+    &__numbering {
+        position: absolute;
+        bottom: 25px;
+        left: calc(50% - 12px);
+        color: white;
+    }
+}

@@ -6,7 +6,7 @@
 
     @include media-query($desktop-width) {
         @include margin-center();
-        padding: 45px 5%;
+        padding: 45px 0;
         margin: auto;
         max-width: 1240px;
     }
