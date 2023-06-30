@@ -14,13 +14,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <React.StrictMode>
         <BrowserRouter>
-            <Header />
-            <Routes>
-                <Route path="/" element={<Home />}></Route>
-                <Route path="/about" element={<About />}></Route>
-                <Route path="/lodging/:id" element={<Lodging />}></Route>
-                <Route path="*" element={<Error />}></Route>
-            </Routes>
+            <div className="wrapper">
+                <Routes>
+                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/about" element={<About />}></Route>
+                    <Route path="/lodging/:id" element={<Lodging />}></Route>
+                    <Route path="*" element={<Error />}></Route>
+                </Routes>
+            </div>
             <Footer />
         </BrowserRouter>
     </React.StrictMode>

@@ -1,9 +1,12 @@
 .collapsible {
     overflow: hidden;
-    margin-left: 5%;
-    margin-right: 5%;
+    max-width: 1023px;
 
-    &__title {
+    @include media-query($desktop-width) {
+        margin: auto;
+    }
+
+    &__container {
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -12,8 +15,19 @@
         padding: 10px;
         z-index: 2;
     }
-
+    &__title {
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        @include media-query($desktop-width) {
+            font-size: 24px;
+        }
+    }
     &__btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+
         &--open {
             transform: rotate(-180deg);
             transition: all 0.5s ease-in-out;
@@ -26,19 +40,31 @@
     }
 
     &__content {
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 400;
         font-size: 13px;
+        color: $primary-color;
+
+        @include media-query($desktop-width) {
+            font-size: 18px;
+        }
 
         &--open {
-            height: 100px;
+            height: 180px;
             transition: all 0.5s ease-in-out;
             transform: translateY(0px);
             background: $grey;
             border-radius: 5px;
+
+            @include media-query($tablet-width) {
+                height: 210px;
+            }
         }
 
         &--closed {
             height: 0px;
-            transform: translateY(-120px);
+            transform: translateY(-210px);
             transition: all 0.5s ease-in-out;
         }
     }

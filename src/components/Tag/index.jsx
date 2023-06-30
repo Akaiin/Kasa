@@ -1,7 +1,7 @@
 function Tag({ name }) {
     return (
         <div>
-            <p>{name}</p>
+            <p className="lodging__tag">{name}</p>
         </div>
     )
 }

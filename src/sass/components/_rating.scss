@@ -1,0 +1,8 @@
+.lodging__rating {
+    width: 13px;
+    height: 13px;
+
+    @include media-query($desktop-width) {
+        transform: scale(2);
+    }
+}

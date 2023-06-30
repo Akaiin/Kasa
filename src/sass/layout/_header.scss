@@ -2,13 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5% 27px 5%;
+    padding: 20px 0 27px 0;
 
     @include media-query($desktop-width) {
         @include margin-center();
-        padding: 45px 0;
-        margin: auto;
-        max-width: 1240px;
     }
 
     &__logo {
@@ -28,6 +25,10 @@
     &__link {
         color: $primary-color;
         font-size: 12px;
+
+        &--active {
+            text-decoration: underline;
+        }
         &:hover {
             text-decoration: underline;
         }

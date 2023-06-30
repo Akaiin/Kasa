@@ -1,4 +1,4 @@
-.lodging__card {
+.home__lodging__card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
         height: 340px;
     }
 
-    &__gradient {
+    &-gradient {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -25,7 +25,7 @@
         );
     }
 
-    &__title {
+    &-title {
         position: relative;
         color: white;
         font-size: 18px;

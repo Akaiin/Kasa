@@ -1,8 +1,14 @@
-.lodging {
+.wrapper {
+    flex: 1;
+    max-width: 1240px;
+    margin: auto;
+    width: 90vw;
+}
+
+.home__lodging {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 5%;
     gap: 20px;
 
     @include media-query($desktop-width) {
@@ -12,6 +18,7 @@
         padding-bottom: 43px;
         max-width: 1240px;
         margin: auto;
+        margin-top: 43px;
         gap: 60px;
     }
 }
