@@ -26,14 +26,13 @@ function Lodging() {
                     setLoad(true)
                 }
             })
-
             .catch((error) => {
                 setError(true)
             })
     }, [])
     useEffect(() => {
         if (errorId) {
-            navigate('/ee')
+            navigate('/404')
         }
     }, [errorId])
     return (
